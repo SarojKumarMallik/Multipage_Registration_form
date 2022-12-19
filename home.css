@@ -1,0 +1,81 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+.main{
+    width: 80%;
+    margin: 25px 10%;
+    padding: 10px 20px;
+    background-color: rgb(210, 255, 240);
+}
+.main button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    max-width: 120px;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: aqua;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.main .btnsubmit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    max-width: 120px;
+    width: 300px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: aqua;
+    color: #fff;
+    cursor: pointer;
+}
+.w-50{
+    width: 45%;
+}
+
+.mr-5{
+    margin: 0px  5% 0px 0px;
+}
+
+.w-100{
+    width: 96%;
+}
+
+.color-red{
+    color: red;
+}
+
+input,select{
+    padding: 5px;
+}
+
+.d-none{
+    display: none;
+}
+
+.col-6 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .pdf{
+    font-size: 12px;
+    font-style: italic;
+  }

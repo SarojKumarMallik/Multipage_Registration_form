@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <form onsubmit="myfunc(event)" >
+    <div class="main" id="1">
+        <br>
+    <div>
+        Name <span class="color-red">*</span><br>
+        <input type="text" placeholder="first" id="first" class="w-50 mr-5" required> 
+        <input type="text" id="last" class="w-50" placeholder="last" required><br><br>
+    </div>
+    <div>
+        Date of Birth <span class="color-red">*</span><br>
+        <input type="date" placeholder="MM/DD/YYYY" class="w-100" required id="date_of_birth"><br><br>
+    </div>
+    <div>
+        Email<span class="color-red">*</span><br>
+        <input type="email" placeholder="" class="w-100" required id="email"><br><br>
+    </div>
+    <div>
+        Fathers's Name<span class="color-red">*</span><br>
+        <input type="text" placeholder="first" class="w-50 mr-5" required id="fn_first"> <input type="text" class="w-50"placeholder="last" required id="fn_last"><br><br>
+    </div>
+    <div>
+        Mother's Name<span class="color-red">*</span><br>
+        <input type="text" placeholder="first" class="w-50 mr-5" required id="mn_first"> <input type="text" placeholder="last" class="w-50" id="mn_last" required><br><br>
+    </div>
+    <div>
+        Gender<span class="color-red">*</span><br>
+        <input type="radio" value="Male" id="gender" name="gender" required>Male <br>
+        <input type="radio" value="female" name="gender">Female
+    </div>    
+    <br>
+    <div>
+        Nationality<span class="color-red">*</span><br>
+        <input type="text" class="w-100" required id="nationality"><br><br>
+    </div>
+    <div>
+        Home Address<span class="color-red">*</span><br>
+        <input type="text" placeholder="Street Address" class="w-100" required id="street"><br><br>
+        <input type="text" placeholder="City" class="w-50 mr-5" required id="city"> 
+        <select name="country"  class="w-50" required id="country">
+            <option value="" selected disabled>Country</option>
+            <option value="india">India</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        Telephone-Home<br>
+        <input text="text" placeholder="### ### ####" maxlength="10" class="w-100" id="t_home"><br><br>
+    </div>
+    <div>
+        Telephone-Mobile<span class="color-red">*</span><br>
+        <input text="text" placeholder="### ### ####" maxlength="10" class="w-100" required id="t_mobile">
+    </div>
+    <br>
+    <br>
+        <button next="2" class="btn">
+        <span class="btnNext">Next</span>
+        </button>
+
+    </div>
+
+  <div class="main d-none" id="2">
+    <div class="row">
+        <div class="col-6">
+            <div>
+                 HSC Institution Name
+                <input type="text" class="w-100" id="hsc_name"><br><br>
+            </div>
+            <div>
+                Score in HSC 
+                <input type="text" class="w-100" placeholder="In Percentage" id="hsc_score"><br><br>
+            </div>
+            <div>
+                SSC Board
+                <select class="w-100" id="ssc_board">
+                    <option selected disabled>Choose Board </option>
+                    <option>CBSC</option>
+                    <option>ICSC</option>
+                    <option>State Board</option>
+
+                </select><br><br>
+            </div>
+            <div>
+                Currently Pursuing<br>
+                <input type="text" class="w-100" id="c_pursuing"><br><br>
+            </div>
+            <div>
+                Overall Percentage<br>
+                <input type="text" class="w-100" id="o_per">
+            </div>
+        </div>
+
+        <div class="col-6">
+           <div>
+
+            HSC Board
+            <select class="w-100" id="hsc_board">
+                <option selected disabled>Choose Board </option>
+                <option>CBSC</option>
+                <option>ICSC</option>
+                <option>State Board</option>
+
+            </select><br><br>
+           </div>
+           <div>
+                SSC Institution Name
+                <input type="text" class="w-100" id="ssc_name"><br><br>
+            </div>
+            <div>  
+                Score in SSC 
+                <input type="text" class="w-100" placeholder="In Percentage" id="ssc_score"><br><br>
+            </div>
+              <div>
+                Currently Pursuing Institution Name
+                <input type="text" class="w-100" id="cp_institute"><br><br>
+            </div>    
+            <div>   
+                 Current Backlogs if Any<br>
+                 <input type="number" class="w-100" id="c_backlogs">
+            </div>
+        </div>
+       
+    </div>
+    <br>
+    <br>
+    <br>
+    <button next="1" class="btn">
+        <span class="btnText">Previous</span></button><br>
+    <button next="3" class="btn">
+        <span class="btnText">Next</span>
+    </button>
+  </div>
+    
+
+<div class="main d-none" id="3">
+    <br>
+    <div>
+         Recent Passport size Photograph <br>
+        <input type="file" id="photo"><br>
+        <p id="photo-msg" style="color:red;display: none;">File cant be more than 4 mb</p>
+    
+    </div><br>
+    <div>
+        HSC Mark Sheet <br>
+        <input type="file" id="hsc"><br>
+        <p id="hsc-msg" style="color:red;display: none;">File cant be more than 4 mb</p>
+    </div><br>
+    <div>
+        SSC Mark Sheet <br>
+        <input type="file" accept="image/*, .doc,.pdf" id="ssc"><br>
+        <p id="ssc-msg" style="color:red;display: none;">File cant be more than 4 mb</p>
+    </div><br>
+    <div>
+        All Semestars Mark Sheet<span class="pdf"> (in a Single PDF or docs) </span><br>
+        <input type="file" accept=".doc,.pdf" id="sem"><br><br>
+        <p id="sem-msg" style="color:red;display: none;">File cant be more than 10 mb</p>
+    </div><br>
+        <button next="2" class="btn">Previous</button><br>
+        <input type="submit" class="btnsubmit" Value="Submit">
+
+
+</div>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="home.js">
+</script>
+
+</body>
+</html>
